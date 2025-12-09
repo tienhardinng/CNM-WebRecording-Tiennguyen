@@ -1,0 +1,100 @@
+2025-12-03T09:56:44.789Z [INFO] Xác thực token: 12345
+2025-12-03T09:56:44.804Z [INFO] (03_12_2025_16_56_viet_tester) Session bắt đầu cho Viet Tester. Folder: 03_12_2025_16_56_viet_tester
+2025-12-03T09:56:56.085Z [SUCCESS] (03_12_2025_16_56_viet_tester) Đã lưu Q1 (495819 bytes) tại: 03_12_2025_16_56_viet_tester\Q1.webm
+2025-12-03T09:56:58.660Z [SUCCESS] (03_12_2025_16_56_viet_tester) Đã lưu Q2 (283833 bytes) tại: 03_12_2025_16_56_viet_tester\Q2.webm
+2025-12-03T09:57:00.749Z [SUCCESS] (03_12_2025_16_56_viet_tester) Đã lưu Q3 (236626 bytes) tại: 03_12_2025_16_56_viet_tester\Q3.webm
+2025-12-03T09:57:02.703Z [SUCCESS] (03_12_2025_16_56_viet_tester) Đã lưu Q4 (307360 bytes) tại: 03_12_2025_16_56_viet_tester\Q4.webm
+2025-12-03T09:57:05.265Z [SUCCESS] (03_12_2025_16_56_viet_tester) Đã lưu Q5 (166368 bytes) tại: 03_12_2025_16_56_viet_tester\Q5.webm
+2025-12-03T09:57:07.001Z [INFO] (03_12_2025_16_56_viet_tester) Session kết thúc. Tổng số câu hỏi: 5
+2025-12-03T10:03:56.388Z [INFO] Xác thực token: 12345
+2025-12-03T10:03:56.405Z [INFO] (03_12_2025_17_03_viet_tester) Session bắt đầu cho Viet Tester. Folder: 03_12_2025_17_03_viet_tester
+2025-12-03T10:04:01.338Z [SUCCESS] (03_12_2025_17_03_viet_tester) Đã lưu Q1 (555450 bytes) tại: 03_12_2025_17_03_viet_tester\Q1.webm
+2025-12-03T10:04:02.849Z [SUCCESS] (03_12_2025_17_03_viet_tester) Đã lưu Q2 (102386 bytes) tại: 03_12_2025_17_03_viet_tester\Q2.webm
+2025-12-03T10:04:04.528Z [SUCCESS] (03_12_2025_17_03_viet_tester) Đã lưu Q3 (134896 bytes) tại: 03_12_2025_17_03_viet_tester\Q3.webm
+2025-12-03T10:04:06.123Z [SUCCESS] (03_12_2025_17_03_viet_tester) Đã lưu Q4 (110 bytes) tại: 03_12_2025_17_03_viet_tester\Q4.webm
+2025-12-03T10:04:08.121Z [SUCCESS] (03_12_2025_17_03_viet_tester) Đã lưu Q5 (164574 bytes) tại: 03_12_2025_17_03_viet_tester\Q5.webm
+2025-12-03T10:04:09.634Z [INFO] (03_12_2025_17_03_viet_tester) Session kết thúc. Tổng số câu hỏi: 5
+2025-12-03T10:05:40.828Z [INFO] Xác thực token: 12345
+2025-12-03T10:05:40.846Z [INFO] (03_12_2025_17_05_viet_tester) Session bắt đầu cho Viet Tester. Folder: 03_12_2025_17_05_viet_tester
+2025-12-03T10:18:23.726Z [INFO] Xác thực token: 12345
+2025-12-03T10:18:23.744Z [INFO] (03_12_2025_17_18_viet_tester) Session bắt đầu cho Viet Tester. Folder: 03_12_2025_17_18_viet_tester
+2025-12-03T10:19:49.083Z [INFO] Xác thực token: 12345
+2025-12-03T10:19:49.104Z [INFO] (03_12_2025_17_19_viet_tester) Session bắt đầu cho Viet Tester. Folder: 03_12_2025_17_19_viet_tester
+2025-12-03T10:20:01.026Z [INFO] (03_12_2025_17_19_viet_tester) Đã tạo transcript: transcript_Q1.txt
+2025-12-03T10:20:01.028Z [SUCCESS] (03_12_2025_17_19_viet_tester) Đã lưu Q1 và STT thành công.
+2025-12-03T10:20:06.429Z [INFO] (03_12_2025_17_19_viet_tester) Đã tạo transcript: transcript_Q2.txt
+2025-12-03T10:20:06.443Z [SUCCESS] (03_12_2025_17_19_viet_tester) Đã lưu Q2 và STT thành công.
+2025-12-03T10:20:10.663Z [INFO] (03_12_2025_17_19_viet_tester) Đã tạo transcript: transcript_Q3.txt
+2025-12-03T10:20:10.671Z [SUCCESS] (03_12_2025_17_19_viet_tester) Đã lưu Q3 và STT thành công.
+2025-12-03T10:20:15.061Z [INFO] (03_12_2025_17_19_viet_tester) Đã tạo transcript: transcript_Q4.txt
+2025-12-03T10:20:15.062Z [SUCCESS] (03_12_2025_17_19_viet_tester) Đã lưu Q4 và STT thành công.
+2025-12-03T10:20:19.480Z [INFO] (03_12_2025_17_19_viet_tester) Đã tạo transcript: transcript_Q5.txt
+2025-12-03T10:20:19.481Z [SUCCESS] (03_12_2025_17_19_viet_tester) Đã lưu Q5 và STT thành công.
+2025-12-03T10:20:24.861Z [INFO] (03_12_2025_17_19_viet_tester) Session kết thúc. Tổng số câu hỏi: 5
+2025-12-03T13:43:15.369Z [INFO] Xác thực token: 12345
+2025-12-03T13:43:15.381Z [INFO] (03_12_2025_20_43_viet_tester) Session bắt đầu cho Viet Tester. Folder: 03_12_2025_20_43_viet_tester
+2025-12-03T13:44:02.819Z [INFO] (03_12_2025_20_43_viet_tester) Đã tạo transcript: transcript_Q1.txt
+2025-12-03T13:44:02.821Z [SUCCESS] (03_12_2025_20_43_viet_tester) Đã lưu Q1 và STT thành công.
+2025-12-03T13:44:08.575Z [INFO] (03_12_2025_20_43_viet_tester) Đã tạo transcript: transcript_Q2.txt
+2025-12-03T13:44:08.580Z [SUCCESS] (03_12_2025_20_43_viet_tester) Đã lưu Q2 và STT thành công.
+2025-12-03T13:44:11.011Z [INFO] (03_12_2025_20_43_viet_tester) Đã tạo transcript: transcript_Q3.txt
+2025-12-03T13:44:11.013Z [SUCCESS] (03_12_2025_20_43_viet_tester) Đã lưu Q3 và STT thành công.
+2025-12-03T13:44:13.487Z [INFO] (03_12_2025_20_43_viet_tester) Đã tạo transcript: transcript_Q4.txt
+2025-12-03T13:44:13.491Z [SUCCESS] (03_12_2025_20_43_viet_tester) Đã lưu Q4 và STT thành công.
+2025-12-03T13:44:15.880Z [INFO] (03_12_2025_20_43_viet_tester) Đã tạo transcript: transcript_Q5.txt
+2025-12-03T13:44:15.882Z [SUCCESS] (03_12_2025_20_43_viet_tester) Đã lưu Q5 và STT thành công.
+2025-12-03T13:44:16.950Z [INFO] (03_12_2025_20_43_viet_tester) Session kết thúc. Tổng số câu hỏi: 5
+2025-12-09T03:30:01.757Z [INFO] Xác thực token: 12345
+2025-12-09T03:30:01.779Z [INFO] (09_12_2025_10_30_viet_tester) Session bắt đầu cho Viet Tester. Folder: 09_12_2025_10_30_viet_tester
+2025-12-09T03:44:33.918Z [INFO] Xác thực token: 12345
+2025-12-09T03:44:33.935Z [INFO] (09_12_2025_10_44_viet_tester) Session bắt đầu cho Viet Tester. Folder: 09_12_2025_10_44_viet_tester
+2025-12-09T03:45:15.664Z [INFO] (09_12_2025_10_44_viet_tester) Đã tạo transcript: transcript_Q1.txt
+2025-12-09T03:45:15.665Z [SUCCESS] (09_12_2025_10_44_viet_tester) Đã lưu Q1 và STT thành công.
+2025-12-09T03:45:17.476Z [INFO] (09_12_2025_10_44_viet_tester) Đã tạo transcript: transcript_Q2.txt
+2025-12-09T03:45:17.477Z [SUCCESS] (09_12_2025_10_44_viet_tester) Đã lưu Q2 và STT thành công.
+2025-12-09T03:45:18.682Z [INFO] (09_12_2025_10_44_viet_tester) Đã tạo transcript: transcript_Q3.txt
+2025-12-09T03:45:18.685Z [SUCCESS] (09_12_2025_10_44_viet_tester) Đã lưu Q3 và STT thành công.
+2025-12-09T03:45:20.455Z [INFO] (09_12_2025_10_44_viet_tester) Đã tạo transcript: transcript_Q4.txt
+2025-12-09T03:45:20.457Z [SUCCESS] (09_12_2025_10_44_viet_tester) Đã lưu Q4 và STT thành công.
+2025-12-09T03:45:22.867Z [INFO] (09_12_2025_10_44_viet_tester) Đã tạo transcript: transcript_Q5.txt
+2025-12-09T03:45:22.869Z [SUCCESS] (09_12_2025_10_44_viet_tester) Đã lưu Q5 và STT thành công.
+2025-12-09T03:45:25.647Z [INFO] (09_12_2025_10_44_viet_tester) Session kết thúc. Tổng số câu hỏi: 5
+2025-12-09T03:47:39.711Z [INFO] Xác thực token: 12345
+2025-12-09T03:47:39.726Z [INFO] (09_12_2025_10_47_viet_tester) Session bắt đầu cho Viet Tester. Folder: 09_12_2025_10_47_viet_tester
+2025-12-09T03:47:47.619Z [INFO] (09_12_2025_10_47_viet_tester) Đã tạo transcript: transcript_Q1.txt
+2025-12-09T03:47:47.620Z [SUCCESS] (09_12_2025_10_47_viet_tester) Đã lưu Q1 và STT thành công.
+2025-12-09T03:47:48.327Z [INFO] (09_12_2025_10_47_viet_tester) Đã tạo transcript: transcript_Q2.txt
+2025-12-09T03:47:48.328Z [SUCCESS] (09_12_2025_10_47_viet_tester) Đã lưu Q2 và STT thành công.
+2025-12-09T03:47:48.857Z [INFO] (09_12_2025_10_47_viet_tester) Đã tạo transcript: transcript_Q3.txt
+2025-12-09T03:47:48.859Z [SUCCESS] (09_12_2025_10_47_viet_tester) Đã lưu Q3 và STT thành công.
+2025-12-09T03:47:49.344Z [INFO] (09_12_2025_10_47_viet_tester) Đã tạo transcript: transcript_Q4.txt
+2025-12-09T03:47:49.345Z [SUCCESS] (09_12_2025_10_47_viet_tester) Đã lưu Q4 và STT thành công.
+2025-12-09T03:47:50.268Z [INFO] (09_12_2025_10_47_viet_tester) Đã tạo transcript: transcript_Q5.txt
+2025-12-09T03:47:50.269Z [SUCCESS] (09_12_2025_10_47_viet_tester) Đã lưu Q5 và STT thành công.
+2025-12-09T03:47:50.464Z [INFO] (09_12_2025_10_47_viet_tester) Session kết thúc. Tổng số câu hỏi: 5
+2025-12-09T03:51:52.825Z [INFO] Verifying token: 12345
+2025-12-09T03:51:52.844Z [INFO] (09_12_2025_10_51_viet_tester) Session started for Viet Tester. Folder: 09_12_2025_10_51_viet_tester
+2025-12-09T03:52:22.024Z [INFO] (09_12_2025_10_51_viet_tester) Transcript created: transcript_Q1.txt
+2025-12-09T03:52:22.027Z [SUCCESS] (09_12_2025_10_51_viet_tester) Q1 and STT saved successfully.
+2025-12-09T03:52:41.640Z [INFO] (09_12_2025_10_51_viet_tester) Transcript created: transcript_Q2.txt
+2025-12-09T03:52:41.643Z [SUCCESS] (09_12_2025_10_51_viet_tester) Q2 and STT saved successfully.
+2025-12-09T03:53:02.147Z [INFO] (09_12_2025_10_51_viet_tester) Transcript created: transcript_Q3.txt
+2025-12-09T03:53:02.149Z [SUCCESS] (09_12_2025_10_51_viet_tester) Q3 and STT saved successfully.
+2025-12-09T03:53:19.468Z [INFO] (09_12_2025_10_51_viet_tester) Transcript created: transcript_Q4.txt
+2025-12-09T03:53:19.470Z [SUCCESS] (09_12_2025_10_51_viet_tester) Q4 and STT saved successfully.
+2025-12-09T03:53:28.932Z [INFO] (09_12_2025_10_51_viet_tester) Transcript created: transcript_Q5.txt
+2025-12-09T03:53:28.934Z [SUCCESS] (09_12_2025_10_51_viet_tester) Q5 and STT saved successfully.
+2025-12-09T03:53:30.253Z [INFO] (09_12_2025_10_51_viet_tester) Session finished. Total questions: 5
+2025-12-09T03:58:42.970Z [INFO] Verifying token: 12345
+2025-12-09T03:58:42.989Z [INFO] (09_12_2025_10_58_viet_tester) Session started for Viet Tester. Folder: 09_12_2025_10_58_viet_tester
+2025-12-09T03:59:14.270Z [INFO] (09_12_2025_10_58_viet_tester) Transcript created: transcript_Q1.txt
+2025-12-09T03:59:14.271Z [SUCCESS] (09_12_2025_10_58_viet_tester) Q1 and STT saved successfully.
+2025-12-09T03:59:45.781Z [INFO] (09_12_2025_10_58_viet_tester) Transcript created: transcript_Q2.txt
+2025-12-09T03:59:45.782Z [SUCCESS] (09_12_2025_10_58_viet_tester) Q2 and STT saved successfully.
+2025-12-09T04:00:14.537Z [INFO] (09_12_2025_10_58_viet_tester) Transcript created: transcript_Q3.txt
+2025-12-09T04:00:14.539Z [SUCCESS] (09_12_2025_10_58_viet_tester) Q3 and STT saved successfully.
+2025-12-09T04:00:32.066Z [INFO] (09_12_2025_10_58_viet_tester) Transcript created: transcript_Q4.txt
+2025-12-09T04:00:32.067Z [SUCCESS] (09_12_2025_10_58_viet_tester) Q4 and STT saved successfully.
+2025-12-09T04:00:45.759Z [INFO] (09_12_2025_10_58_viet_tester) Transcript created: transcript_Q5.txt
+2025-12-09T04:00:45.760Z [SUCCESS] (09_12_2025_10_58_viet_tester) Q5 and STT saved successfully.
+2025-12-09T04:00:46.788Z [INFO] (09_12_2025_10_58_viet_tester) Session finished. Total questions: 5

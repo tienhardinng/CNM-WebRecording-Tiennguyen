@@ -1,46 +1,97 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>HanTie • Christmas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Germania+One&display=swap" rel="stylesheet">
   <style>
     :root{
       --bg-dark:#0f172a; --card-dark:#1e293b; --text-dark:#f1f5f9;
-      --primary:#ef4444; --primary-hover:#dc2626; /* Đỏ Xmas */
+      --primary:#ef4444; --primary-hover:#dc2626; /* Xmas Red */
       --green:#10b981; --green-hover:#059669;
       --gold:#f59e0b;
     }
     html,body{height:100%; margin:0; padding:0; overflow:hidden;}
     body{
       display:flex; justify-content:center; align-items:center;
-      background:linear-gradient(to bottom, #0b1120, #1e293b); 
+      /* DEEPER DARK BACKGROUND */
+      background-color: #030612;
       color:var(--text-dark);
       font-family:sans-serif;
       position:relative;
     }
 
-    /* Card chính */
+    /* --- AURORA BOREALIS EFFECT --- */
+    body::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1; /* Below the card */
+        /* Create soft aurora colors */
+        background: radial-gradient(circle at 50% 10%, rgba(30, 200, 100, 0.2) 0%, transparent 40%),
+                    radial-gradient(circle at 60% 5%, rgba(100, 50, 255, 0.15) 0%, transparent 45%);
+        background-size: 100% 100%;
+        animation: aurora-shift 60s linear infinite alternate;
+        opacity: 0.6;
+    }
+
+    @keyframes aurora-shift {
+        0% { background-position: 0% 0%; }
+        100% { background-position: 100% 50%; }
+    }
+    /* --- END AURORA --- */
+
+    /* Main Card */
     .card{
       background:var(--card-dark); 
       border-radius:20px; 
       box-shadow:0 20px 50px rgba(0,0,0,0.5);
       width:90%; max-width:500px; 
       padding:30px; 
-      z-index:20; 
+      z-index:20; /* Always above the background */
       text-align: center;
       border: 1px solid #334155;
-      /* Thêm thanh cuộn nếu nội dung quá dài (cho phần xem lại) */
       max-height: 90vh;
       overflow-y: auto; 
+      margin-top: 50px; 
     }
 
     /* Typography */
-    h1{ margin:0; font-size:2.5rem; color:var(--primary); font-weight:800; letter-spacing:1px; text-transform:uppercase; }
+    h1{ 
+      margin:0; 
+      font-size:2.5rem; 
+      font-weight:800; 
+      letter-spacing:1px; 
+      text-transform:uppercase; 
+      font-family: 'Germania One', cursive; /* APPLY FONT FOR HANTIE */
+      text-shadow: 0 0 5px rgba(255,255,255,0.8);
+    }
+    /* HANTIE Colors (Candy Cane effect) */
+    #han-part { 
+        color: var(--primary); /* Red */
+        /* Create soft white stripes */
+        background: linear-gradient(90deg, #fff 0%, #fff 15%, var(--primary) 15%, var(--primary) 30%, #fff 30%, #fff 45%, var(--primary) 45%, var(--primary) 60%, #fff 60%, #fff 75%, var(--primary) 75%, var(--primary) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    #tie-part { 
+        color: var(--green); /* Green */
+        /* Create soft white stripes */
+        background: linear-gradient(90deg, #fff 0%, #fff 15%, var(--green) 15%, var(--green) 30%, #fff 30%, #fff 45%, var(--green) 45%, var(--green) 60%, #fff 60%, #fff 75%, var(--green) 75%, var(--green) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-position: 50% 50%;
+    }
+
+
     h2{ margin:0 0 5px; font-size:1.2rem; color:var(--gold); font-family:'Brush Script MT', cursive; }
     .muted{ color:#94a3b8; font-size:0.9rem; margin-bottom:20px; }
 
-    /* Inputs */
+    /* Inputs & Buttons */
     .field{ margin-bottom:15px; text-align:left; }
     label{ display:block; margin-bottom:5px; font-weight:600; font-size:0.9rem; }
     input[type="text"]{ 
@@ -50,7 +101,6 @@
     }
     input:focus{ outline:2px solid var(--primary); border-color:transparent; }
 
-    /* Buttons */
     .btn{ 
       display:inline-block; width:100%; padding:14px; 
       background:var(--primary); color:#fff; 
@@ -61,35 +111,55 @@
     .btn:hover{ background:var(--primary-hover); transform:translateY(-2px); }
     .btn:disabled{ background:#64748b; cursor:not-allowed; transform:none; }
     
-    /* Nút thay thế (Xanh lá) */
-    .btn.alt{ background:var(--green); }
-    .btn.alt:hover{ background:var(--green-hover); }
-
     /* Video Area */
     #interview-section{ display:none; text-align:left; }
-    video{ 
-      width:100%; background:#000; border-radius:12px; 
-      /* Lưu ý: Video xem lại KHÔNG lật ngược, chỉ lật video preview thôi */
-    }
+    video{ width:100%; background:#000; border-radius:12px; }
     #video-preview { transform: scaleX(-1); box-shadow: 0 4px 12px rgba(0,0,0,0.3); }
-
-    .btn-group { display:flex; gap:10px; margin-top:15px; }
-    .btn-group .btn { margin-top:0; }
 
     /* Status text */
     #start-status, #upload-status { margin-top:15px; font-size:0.9rem; color:var(--gold); min-height:1.2em; }
 
-    /* --- TRANG TRÍ DƯỚI ĐÁY --- */
+    /* --- MERRY CHRISTMAS TEXT (FONT GERMANIA ONE) --- */
+    #christmas-banner {
+      position: fixed; top: 10px; left: 0; right: 0;
+      height: 60px; 
+      z-index: 30; 
+      text-align: center;
+      color: white;
+      text-shadow: 0 0 15px rgba(255, 255, 255, 0.5); 
+      display: flex; justify-content: center; align-items: center;
+      pointer-events: none;
+    }
+    .banner-text-group {
+        font-family: 'Germania One', cursive; 
+        font-size: 2.2rem; 
+        font-weight: 400; 
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        display: flex;
+        gap: 15px; 
+        align-items: center;
+    }
+    .banner-deco {
+        width: 30px; /* Small size for decoration */
+        height: 30px;
+        opacity: 0.8;
+    }
+    
+    /* --- SANTA IS HIDDEN --- */
+    #santa-sleigh { display: none; }
+    
+    /* --- BOTTOM DECORATION (SWAYING TREES/GIFTS) --- */
     .deco-row {
       position: fixed; bottom: -10px; left: 0; right: 0;
       height: 100px;
-      display: flex; justify-content: space-between; align-items: flex-end;
+      display: flex; justify-content: space-between; 
       pointer-events: none; z-index: 10;
       padding: 0 20px;
     }
     .deco-item {
       width: 60px; height: auto;
-      animation: sway 3s ease-in-out infinite;
+      animation: sway 3s ease-in-out infinite; 
       transform-origin: bottom center;
     }
     @keyframes sway { 0%,100%{transform:rotate(-5deg);} 50%{transform:rotate(5deg);} }
@@ -100,59 +170,75 @@
 </head>
 <body>
 
+  <div id="christmas-banner">
+    <span class="banner-text-group">
+        <div class="banner-deco">
+            <svg viewBox="0 0 64 80"><path fill="#10b981" d="M32 4L6 40h52L32 4z"/><path fill="#059669" d="M32 16L10 50h44L32 16z"/><rect x="28" y="50" width="8" height="12" fill="#78350f"/></svg>
+        </div>
+        
+        MERRY CHRISTMAS
+        
+        <div class="banner-deco">
+            <svg viewBox="0 0 64 64"><rect x="8" y="28" width="48" height="28" rx="4" fill="#ef4444"/><rect x="28" y="28" width="8" height="28" fill="#fcd34d"/><rect x="8" y="24" width="48" height="8" fill="#fcd34d"/><circle cx="32" cy="24" r="6" fill="#fcd34d"/></svg>
+        </div>
+    </span>
+  </div>
+
+  <div id="santa-sleigh"></div>
+  
   <div class="deco-row" id="deco-container"></div>
 
   <div class="card" id="start-container">
     <h2>Merry Xmas</h2>
-    <h1>HanTie</h1>
-    <p class="muted">Phỏng vấn Video • Nhập Token để bắt đầu</p>
+    <h1>
+        <span id="han-part">HAN</span><span id="tie-part">TIE</span>
+    </h1>
+    <p class="muted">Video Interview • Enter Token to start</p>
 
     <div class="field">
-      <label>Token truy cập</label>
-      <input id="token-input" type="text" value="12345" placeholder="Nhập token..." />
+      <label>Access Token</label>
+      <input id="token-input" type="text" value="12345" placeholder="Enter token..." />
     </div>
     <div class="field">
-      <label>Họ và Tên</label>
-      <input id="name-input" type="text" value="Viet Tester" placeholder="Nhập tên bạn..." />
+      <label>Full Name</label>
+      <input id="name-input" type="text" value="Viet Tester" placeholder="Enter your name..." />
     </div>
-    <button id="start-button" class="btn" type="button">Bắt đầu phỏng vấn</button>
+    <button id="start-button" class="btn" type="button">Start Interview</button>
     <p id="start-status"></p>
   </div>
 
   <div class="card" id="interview-section">
-    <h3 style="margin-top:0; color:var(--gold)">Phỏng vấn HanTie</h3>
-    <p id="question-text" style="font-weight:bold; font-size:1.1rem; margin-bottom:10px;">Đang tải...</p>
+    <h3 style="margin-top:0; color:var(--gold)">HanTie Interview</h3>
+    <p id="question-text" style="font-weight:bold; font-size:1.1rem; margin-bottom:10px;">Loading...</p>
     
     <video id="video-preview" autoplay muted playsinline></video>
 
-    <div class="btn-group">
-      <button id="record-button" class="btn alt" type="button">Bắt đầu quay</button>
-      <button id="stop-button" class="btn alt" type="button" style="display:none; background:#ef4444;">Tạm dừng quay</button>
-    </div>
+    <button id="main-action-button" class="btn" type="button" style="background:#10b981; margin-top: 15px;">Start Recording</button>
 
-    <div class="btn-group">
-      <button id="next-button" class="btn" type="button" disabled>Next (Tải lên)</button>
-      <button id="finish-button" class="btn" type="button" style="display:none; background:var(--gold); color:#000;">Hoàn thành</button>
-    </div>
+    <button id="finish-button" class="btn" type="button" style="display:none; background:var(--gold); color:#000; margin-top: 10px;">Finish</button>
 
     <p id="upload-status"></p>
   </div>
 
   <div class="card" id="playback-section" style="display:none;">
-    <h2 style="color:var(--gold)">Kết quả phỏng vấn</h2>
-    <p class="muted">Dưới đây là các video bạn vừa ghi lại:</p>
+    <h2 style="color:var(--gold)">Interview Results</h2>
+    <p class="muted">Below are the videos you recorded:</p>
     
     <div id="video-grid" style="display:grid; grid-template-columns:1fr; gap:20px; text-align:left;">
       </div>
 
+    <h3 style="color:var(--gold); margin-top:20px;">Speech-to-Text Transcripts</h3>
+    <div id="transcript-container" style="text-align:left; max-height: 300px; overflow-y: auto; padding: 10px; border: 1px solid #475569; border-radius: 8px;">
+        <p class="muted">Transcript results will appear here after the interview is complete.</p>
+    </div>
     <button class="btn" onclick="window.location.reload()" style="margin-top:20px; background:#334155">
-      Làm mới (Quay lại từ đầu)
+      Refresh (Go back to start)
     </button>
   </div>
 
-  <script defer src="./app.js"></script>
+  <script src="./app.js"></script>
   <script>
-    // Tạo tuyết và hàng cây
+    // Create snow and alternating trees/gifts (WITH SWAYING EFFECT)
     (function(){
       for(let i=0; i<50; i++){
         const f=document.createElement('div'); f.className='flake'; f.textContent='❄';
@@ -163,14 +249,17 @@
         document.body.appendChild(f);
       }
       const box = document.getElementById('deco-container');
+      
+      // Christmas Tree SVG (as before)
       const treeSVG = `<svg viewBox="0 0 64 80"><path fill="#10b981" d="M32 4L6 40h52L32 4z"/><path fill="#059669" d="M32 16L10 50h44L32 16z"/><rect x="28" y="50" width="8" height="12" fill="#78350f"/></svg>`;
+      // Gift Box SVG (as before)
       const giftSVG = `<svg viewBox="0 0 64 64"><rect x="8" y="28" width="48" height="28" rx="4" fill="#ef4444"/><rect x="28" y="28" width="8" height="28" fill="#fcd34d"/><rect x="8" y="24" width="48" height="8" fill="#fcd34d"/><circle cx="32" cy="24" r="6" fill="#fcd34d"/></svg>`;
       
       const count = Math.floor(window.innerWidth / 70); 
       for(let i=0; i<count; i++){
         const div = document.createElement('div');
         div.className = 'deco-item';
-        div.innerHTML = (i % 2 === 0) ? treeSVG : giftSVG;
+        div.innerHTML = (i % 2 === 0) ? treeSVG : giftSVG; 
         div.style.animationDelay = (Math.random() * -2) + 's';
         box.appendChild(div);
       }
