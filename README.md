@@ -1,3 +1,83 @@
-Web Interview Recorder - HanTie Project1. Introduction and Architecture OverviewThe Web Interview Recorder - HanTie project is a client-server web application designed to record sequential video interviews using the user's camera and microphone1. Its core functionality is the Per-Question Upload model, ensuring reliability and data integrity for each recorded answer2.This project demonstrates strong understanding of Client-Server network communication, MediaStream data handling, and server-side file processing3.Technical Stack and Environment: The application is built using Node.js (v18+) and Express.js for the Backend, and HTML5/CSS/JavaScript for the Frontend4. The protocol used is HTTP on localhost, although Hypertext Transfer Protocol Secure (HTTPS) is required when deployed publicly to access camera and microphone devices5555.2. File Naming and Storage ConventionAll data is stored on the server following strict organizational rules 6(Timezone: Asia/Bangkok 7):Session Folder: DD_MM_YYYY_HH_mm_username_safe 8Video File: Q[questionIndex].webm 9Metadata: meta.json 10Transcript (Bonus): transcript_Q[questionIndex].txt 113. API Contract and Session FlowThe application uses four primary Application Programming Interface (API) endpoints, following the required flow: session/start → upload-one (each question) → session/finish12.POST /api/verify-token: Validates the access token13.POST /api/session/start: Initializes the session, verifies the token, and creates the secure upload folder14.POST /api/upload-one (Multipart): Saves the video file, processes Speech-to-Text (STT), and updates metadata incrementally per question151515151515151515.POST /api/session/finish: Finalizes the session data16161616.4. Reliability and Data Integrity4.1 Per-Question Upload PolicyThe client is prevented from proceeding to the next question ($i+1$) until the upload for question $i$ is successfully confirmed by the server response17. This synchronous flow is the core reliability feature.4.2 Retry Mechanism (Exponential Backoff)To handle network errors and improve reliability, the client implements a robust retry mechanism for the /api/upload-one call18:Max Retries: Up to 3 attempts are executed19.Mechanism: Exponential Backoff is used to increase the delay between attempts (e.g., $2^n \times 1 \text{ second}$)20.Control Flow: The next question is blocked until upload is successful21.4.3 File Limits and ValidationMax File Size: Files are limited to 50MB22.Accepted MIME Type: Strictly filtered for video/webm23.Name Sanitization: The userName input is sanitized and truncated to ensure filesystem safety24.5. Bonus Feature: Speech-to-Text (STT)5.1 STT ProcessingEngine Choice: The Gemini 2.5 Flash API is used to transcribe the video content25.Trigger: STT processing is initiated automatically on the Server after the file is successfully uploaded and saved via the /api/upload-one route26.Output: The transcribed content is saved on the server as transcript_Q*.txt 27and returned to the Frontend to be displayed in the review screen for immediate feedback28.6. Run Instructions6.1 InstallationEnsure Node.js (v18+) is installed.Open the terminal at the root directory of the project.Install necessary dependencies using the following command:Bashnpm install
-6.2 ExecutionConfiguration: Configure the Gemini API Key (for STT bonus) in the backend environment variables.Start Server: Run the backend server with the command:Bashnode server.js
-Access Application: Open index.html in your browser (via localhost if running locally).
+Web Interview Recorder – HanTie Project
+1️. Project Overview
+HanTie is a client-server web application for structured, sequential video interviews.
+Core Feature: Per-Question Upload ensures reliability and data integrity for each recorded answer.
+Technical Stack:
+Backend: Node.js (v18+) + Express.js
+Frontend: HTML5, CSS, JavaScript
+Protocol: HTTP for localhost; HTTPS required for public deployment
+Key Concepts Demonstrated: Client-Server communication, MediaStream handling, server-side file processing
+
+2️. File Structure
+HanTie/
+├─ .github/workflows/    # GitHub Actions workflows
+├─ logs/                 # Server logs
+├─ node_modules/         # Dependencies
+├─ uploads/              # Recorded video & transcripts
+├─ index.html            # Frontend UI
+├─ app.js                # Frontend JS logic
+├─ server.js             # Node.js server
+├─ package.json
+├─ package-lock.json
+└─ README.md
+
+Server Storage Example (Session Folder):
+uploads/DD_MM_YYYY_HH_mm_username_safe/
+├─ Q1.webm
+├─ transcript_Q1.txt
+├─ Q2.webm
+├─ transcript_Q2.txt
+└─ meta.json
+
+3️. API Contract
+Endpoint	Method	Description
+/api/verify-token	POST	Validate access token
+/api/session/start	POST	Initialize session, verify token, create upload folder
+/api/upload-one	POST (Multipart)	Save video, process STT, update metadata per question
+/api/session/finish	POST	Finalize session data
+
+Session Flow:
+Start → validate token, create folder
+Interview Loop → record → upload → STT → update metadata → next question
+Finish → finalize session data
+
+4️. Reliability and Data Integrity
+Per-Question Upload: Client cannot proceed until current upload succeeds
+Retry with Exponential Backoff: Max 3 retries, delay 2^n × 1 second
+File Validation:
+Max size: 50MB
+MIME type: video/webm
+User names sanitized and truncated
+
+5️. Speech-to-Text (STT)
+Engine: Gemini 2.5 Flash API
+Trigger: Automatically after /api/upload-one saves video
+Output: Per-question transcript stored locally (transcript_Q[questionIndex].txt) and returned in JSON for frontend review
+
+6️. Branch Structure
+main
+ ├─ V1-prototype        # Initial Vosk-based STT module (70MB, replaced)
+ └─ final-gemini        # Final Gemini-based implementation
+
+7️. Demo & Resources
+YouTube Demo Video: Link
+Presentation Slides: Link
+Final GitHub Repository: HanTie Final
+V1 Prototype (Optional): Vosk Prototype
+
+8️. Team Contributions
+Member	            Student ID	Contribution	      Role
+Nguyen Viet Tien	11247233	 33.34%	       Backend, reliability, storage & metadata
+Pham Thu Ha	        11247164	 33.33%	       Frontend, initial STT (Vosk), API integration
+Hoang Thanh Nhan	11274212	 33.33%	       Frontend UI, retry/backoff, testing
+
+9️. Future Work
+FFmpeg integration for multiple video formats
+One-time re-record per question
+Enhanced client-side logging
+
+🔗 References
+NEU Project Brief: Web Interview Recorder, 2025
+Network & Communication Technology Course Material
+Gemini 2.5 Flash API Documentation
+Node.js, Express.js, Multer Middleware Documentation
