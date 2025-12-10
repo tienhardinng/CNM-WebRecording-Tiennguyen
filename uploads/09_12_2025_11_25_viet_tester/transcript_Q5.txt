@@ -1,0 +1,3 @@
+[Question 5: Do you have any questions for us?]
+--- Automatic Transcript (STT) ---
+Internal error calling AI: An internal error has occurred. Please retry or report in https://developers.generativeai.google/guide/troubleshooting

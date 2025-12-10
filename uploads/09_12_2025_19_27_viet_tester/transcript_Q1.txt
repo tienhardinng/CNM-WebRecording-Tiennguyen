@@ -1,0 +1,3 @@
+[Question 1: Introduce yourself.]
+--- Automatic Transcript (STT) ---
+Internal error calling AI: fetch failed

@@ -10,8 +10,8 @@ const { Buffer } = require('buffer');
 const app = express();
 const PORT = 3000;
 
-// ====== GEMINI AI CONFIG (API KEY INCLUDED) ======
-const GEMINI_API_KEY = "AIzaSyDzFnCZHgWCeG_dCNHjZte4et-xqW4ZA3k"; 
+// ====== GEMINI AI CONFIG (API KEY UPDATED HERE) ======
+const GEMINI_API_KEY = "AIzaSyBYcoAjM859Uo5dJ1sWLo8Xgcr5Ol2t5qg"; 
 const GEMINI_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${GEMINI_API_KEY}`;
 // =================================================
 
@@ -75,6 +75,8 @@ async function generateTranscript(filePath, question) {
 
         const result = await response.json();
         if (result.error) {
+            // Log specific error message from the API
+            logServer("error", `Gemini API Error: ${result.error.message}`);
             throw new Error(result.error.message || "Unknown API error.");
         }
         
@@ -83,7 +85,8 @@ async function generateTranscript(filePath, question) {
         return text;
     } catch (error) {
         logServer("error", `Error calling Gemini API: ${error.message}`);
-        return `Internal error calling AI: ${error.message}`;
+        // This is the error message that appears in the transcript on screen
+        return `Internal error calling AI: ${error.message}`; 
     }
 }
 // --- END AI FUNCTION ---
@@ -236,7 +239,12 @@ app.post("/api/upload-one", (req, res) => {
             });
             
         } catch (err) {
+            // Catch error during STT/Metadata processing
             logServer("error", `Error processing metadata/STT: ${err.message}`, folder);
+            // Check if the error came from the Gemini API call inside generateTranscript
+            if (err.message.includes("API")) {
+                return res.status(500).json({ ok: false, message: `STT Error: ${err.message}` });
+            }
             return res.status(500).json({ ok: false, message: "Server error processing STT/metadata" });
         }
     });

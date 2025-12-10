@@ -1,0 +1,54 @@
+{
+  "userName": "Viet Tester",
+  "startAt": "2025-12-09T15:55:13.565Z",
+  "timeZone": "Asia/Bangkok",
+  "questions": [
+    {
+      "index": 1,
+      "fileName": "Q1.webm",
+      "question": "Introduce yourself.",
+      "uploadedAt": "2025-12-09T15:55:38.125Z",
+      "fileSize": 3092755,
+      "mimeType": "video/webm",
+      "transcriptFile": "transcript_Q1.txt"
+    },
+    {
+      "index": 2,
+      "fileName": "Q2.webm",
+      "question": "What are your strengths?",
+      "uploadedAt": "2025-12-09T15:55:57.131Z",
+      "fileSize": 1286045,
+      "mimeType": "video/webm",
+      "transcriptFile": "transcript_Q2.txt"
+    },
+    {
+      "index": 3,
+      "fileName": "Q3.webm",
+      "question": "What are your goals in the near future?",
+      "uploadedAt": "2025-12-09T15:56:11.517Z",
+      "fileSize": 1053165,
+      "mimeType": "video/webm",
+      "transcriptFile": "transcript_Q3.txt"
+    },
+    {
+      "index": 4,
+      "fileName": "Q4.webm",
+      "question": "Why did you choose our company?",
+      "uploadedAt": "2025-12-09T15:56:24.684Z",
+      "fileSize": 647264,
+      "mimeType": "video/webm",
+      "transcriptFile": "transcript_Q4.txt"
+    },
+    {
+      "index": 5,
+      "fileName": "Q5.webm",
+      "question": "Do you have any questions for us?",
+      "uploadedAt": "2025-12-09T15:56:35.934Z",
+      "fileSize": 253796,
+      "mimeType": "video/webm",
+      "transcriptFile": "transcript_Q5.txt"
+    }
+  ],
+  "finishAt": "2025-12-09T15:56:42.264Z",
+  "questionsCount": 5
+}

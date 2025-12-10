@@ -98,3 +98,87 @@
 2025-12-09T04:00:45.759Z [INFO] (09_12_2025_10_58_viet_tester) Transcript created: transcript_Q5.txt
 2025-12-09T04:00:45.760Z [SUCCESS] (09_12_2025_10_58_viet_tester) Q5 and STT saved successfully.
 2025-12-09T04:00:46.788Z [INFO] (09_12_2025_10_58_viet_tester) Session finished. Total questions: 5
+2025-12-09T04:25:54.445Z [INFO] Verifying token: 12345
+2025-12-09T04:25:54.463Z [INFO] (09_12_2025_11_25_viet_tester) Session started for Viet Tester. Folder: 09_12_2025_11_25_viet_tester
+2025-12-09T04:29:22.945Z [INFO] (09_12_2025_11_25_viet_tester) Transcript created: transcript_Q1.txt
+2025-12-09T04:29:22.947Z [SUCCESS] (09_12_2025_11_25_viet_tester) Q1 and STT saved successfully.
+2025-12-09T04:29:38.303Z [INFO] (09_12_2025_11_25_viet_tester) Transcript created: transcript_Q2.txt
+2025-12-09T04:29:38.304Z [SUCCESS] (09_12_2025_11_25_viet_tester) Q2 and STT saved successfully.
+2025-12-09T04:29:53.831Z [INFO] (09_12_2025_11_25_viet_tester) Transcript created: transcript_Q3.txt
+2025-12-09T04:29:53.833Z [SUCCESS] (09_12_2025_11_25_viet_tester) Q3 and STT saved successfully.
+2025-12-09T04:31:22.426Z [ERROR] Error calling Gemini API: An internal error has occurred. Please retry or report in https://developers.generativeai.google/guide/troubleshooting
+2025-12-09T04:31:22.428Z [INFO] (09_12_2025_11_25_viet_tester) Transcript created: transcript_Q4.txt
+2025-12-09T04:31:22.430Z [SUCCESS] (09_12_2025_11_25_viet_tester) Q4 and STT saved successfully.
+2025-12-09T04:31:25.097Z [ERROR] Error calling Gemini API: An internal error has occurred. Please retry or report in https://developers.generativeai.google/guide/troubleshooting
+2025-12-09T04:31:25.102Z [INFO] (09_12_2025_11_25_viet_tester) Transcript created: transcript_Q5.txt
+2025-12-09T04:31:25.104Z [SUCCESS] (09_12_2025_11_25_viet_tester) Q5 and STT saved successfully.
+2025-12-09T04:31:34.327Z [INFO] (09_12_2025_11_25_viet_tester) Session finished. Total questions: 5
+2025-12-09T12:26:46.373Z [INFO] Verifying token: 12345
+2025-12-09T12:26:46.395Z [INFO] (09_12_2025_19_26_viet_tester) Session started for Viet Tester. Folder: 09_12_2025_19_26_viet_tester
+2025-12-09T12:27:27.857Z [INFO] Verifying token: 12345
+2025-12-09T12:27:27.866Z [INFO] (09_12_2025_19_27_viet_tester) Session started for Viet Tester. Folder: 09_12_2025_19_27_viet_tester
+2025-12-09T12:27:45.837Z [ERROR] Error calling Gemini API: fetch failed
+2025-12-09T12:27:45.844Z [INFO] (09_12_2025_19_27_viet_tester) Transcript created: transcript_Q1.txt
+2025-12-09T12:27:45.846Z [SUCCESS] (09_12_2025_19_27_viet_tester) Q1 and STT saved successfully.
+2025-12-09T12:28:39.932Z [ERROR] Error calling Gemini API: fetch failed
+2025-12-09T12:28:39.934Z [INFO] (09_12_2025_19_27_viet_tester) Transcript created: transcript_Q2.txt
+2025-12-09T12:28:39.936Z [SUCCESS] (09_12_2025_19_27_viet_tester) Q2 and STT saved successfully.
+2025-12-09T12:28:45.565Z [ERROR] Error calling Gemini API: fetch failed
+2025-12-09T12:28:45.568Z [INFO] (09_12_2025_19_27_viet_tester) Transcript created: transcript_Q3.txt
+2025-12-09T12:28:45.574Z [SUCCESS] (09_12_2025_19_27_viet_tester) Q3 and STT saved successfully.
+2025-12-09T12:28:57.966Z [ERROR] Error calling Gemini API: fetch failed
+2025-12-09T12:28:57.968Z [INFO] (09_12_2025_19_27_viet_tester) Transcript created: transcript_Q4.txt
+2025-12-09T12:28:57.969Z [SUCCESS] (09_12_2025_19_27_viet_tester) Q4 and STT saved successfully.
+2025-12-09T12:29:02.238Z [ERROR] Error calling Gemini API: fetch failed
+2025-12-09T12:29:02.242Z [INFO] (09_12_2025_19_27_viet_tester) Transcript created: transcript_Q5.txt
+2025-12-09T12:29:02.245Z [SUCCESS] (09_12_2025_19_27_viet_tester) Q5 and STT saved successfully.
+2025-12-09T12:29:03.368Z [INFO] (09_12_2025_19_27_viet_tester) Session finished. Total questions: 5
+2025-12-09T15:32:44.164Z [INFO] Verifying token: 12345
+2025-12-09T15:32:44.180Z [INFO] (09_12_2025_22_32_viet_tester) Session started for Viet Tester. Folder: 09_12_2025_22_32_viet_tester
+2025-12-09T15:35:27.613Z [ERROR] Error calling Gemini API: The model is overloaded. Please try again later.
+2025-12-09T15:35:27.620Z [INFO] (09_12_2025_22_32_viet_tester) Transcript created: transcript_Q1.txt
+2025-12-09T15:35:27.623Z [SUCCESS] (09_12_2025_22_32_viet_tester) Q1 and STT saved successfully.
+2025-12-09T15:35:52.638Z [ERROR] Error calling Gemini API: Your API key was reported as leaked. Please use another API key.
+2025-12-09T15:35:52.642Z [INFO] (09_12_2025_22_32_viet_tester) Transcript created: transcript_Q2.txt
+2025-12-09T15:35:52.644Z [SUCCESS] (09_12_2025_22_32_viet_tester) Q2 and STT saved successfully.
+2025-12-09T15:35:53.592Z [ERROR] Error calling Gemini API: Your API key was reported as leaked. Please use another API key.
+2025-12-09T15:35:53.594Z [INFO] (09_12_2025_22_32_viet_tester) Transcript created: transcript_Q3.txt
+2025-12-09T15:35:53.596Z [SUCCESS] (09_12_2025_22_32_viet_tester) Q3 and STT saved successfully.
+2025-12-09T15:35:54.764Z [ERROR] Error calling Gemini API: Your API key was reported as leaked. Please use another API key.
+2025-12-09T15:35:54.766Z [INFO] (09_12_2025_22_32_viet_tester) Transcript created: transcript_Q4.txt
+2025-12-09T15:35:54.767Z [SUCCESS] (09_12_2025_22_32_viet_tester) Q4 and STT saved successfully.
+2025-12-09T15:38:23.607Z [ERROR] Error calling Gemini API: Your API key was reported as leaked. Please use another API key.
+2025-12-09T15:38:23.609Z [INFO] (09_12_2025_22_32_viet_tester) Transcript created: transcript_Q5.txt
+2025-12-09T15:38:23.613Z [SUCCESS] (09_12_2025_22_32_viet_tester) Q5 and STT saved successfully.
+2025-12-09T15:38:26.148Z [INFO] (09_12_2025_22_32_viet_tester) Session finished. Total questions: 5
+2025-12-09T15:47:41.346Z [INFO] Verifying token: 12345
+2025-12-09T15:47:41.366Z [INFO] (09_12_2025_22_47_viet_tester) Session started for Viet Tester. Folder: 09_12_2025_22_47_viet_tester
+2025-12-09T15:47:52.888Z [ERROR] Error calling Gemini API: Your API key was reported as leaked. Please use another API key.
+2025-12-09T15:47:52.896Z [INFO] (09_12_2025_22_47_viet_tester) Transcript created: transcript_Q1.txt
+2025-12-09T15:47:52.899Z [SUCCESS] (09_12_2025_22_47_viet_tester) Q1 and STT saved successfully.
+2025-12-09T15:48:05.741Z [ERROR] Error calling Gemini API: Your API key was reported as leaked. Please use another API key.
+2025-12-09T15:48:05.743Z [INFO] (09_12_2025_22_47_viet_tester) Transcript created: transcript_Q2.txt
+2025-12-09T15:48:05.747Z [SUCCESS] (09_12_2025_22_47_viet_tester) Q2 and STT saved successfully.
+2025-12-09T15:48:22.401Z [ERROR] Error calling Gemini API: Your API key was reported as leaked. Please use another API key.
+2025-12-09T15:48:22.403Z [INFO] (09_12_2025_22_47_viet_tester) Transcript created: transcript_Q3.txt
+2025-12-09T15:48:22.405Z [SUCCESS] (09_12_2025_22_47_viet_tester) Q3 and STT saved successfully.
+2025-12-09T15:48:35.324Z [ERROR] Error calling Gemini API: Your API key was reported as leaked. Please use another API key.
+2025-12-09T15:48:35.327Z [INFO] (09_12_2025_22_47_viet_tester) Transcript created: transcript_Q4.txt
+2025-12-09T15:48:35.328Z [SUCCESS] (09_12_2025_22_47_viet_tester) Q4 and STT saved successfully.
+2025-12-09T15:48:38.901Z [ERROR] Error calling Gemini API: Your API key was reported as leaked. Please use another API key.
+2025-12-09T15:48:38.903Z [INFO] (09_12_2025_22_47_viet_tester) Transcript created: transcript_Q5.txt
+2025-12-09T15:48:38.905Z [SUCCESS] (09_12_2025_22_47_viet_tester) Q5 and STT saved successfully.
+2025-12-09T15:48:39.765Z [INFO] (09_12_2025_22_47_viet_tester) Session finished. Total questions: 5
+2025-12-09T15:55:13.549Z [INFO] Verifying token: 12345
+2025-12-09T15:55:13.570Z [INFO] (09_12_2025_22_55_viet_tester) Session started for Viet Tester. Folder: 09_12_2025_22_55_viet_tester
+2025-12-09T15:55:45.650Z [INFO] (09_12_2025_22_55_viet_tester) Transcript created: transcript_Q1.txt
+2025-12-09T15:55:45.657Z [SUCCESS] (09_12_2025_22_55_viet_tester) Q1 and STT saved successfully.
+2025-12-09T15:56:01.702Z [INFO] (09_12_2025_22_55_viet_tester) Transcript created: transcript_Q2.txt
+2025-12-09T15:56:01.706Z [SUCCESS] (09_12_2025_22_55_viet_tester) Q2 and STT saved successfully.
+2025-12-09T15:56:18.593Z [INFO] (09_12_2025_22_55_viet_tester) Transcript created: transcript_Q3.txt
+2025-12-09T15:56:18.595Z [SUCCESS] (09_12_2025_22_55_viet_tester) Q3 and STT saved successfully.
+2025-12-09T15:56:31.959Z [INFO] (09_12_2025_22_55_viet_tester) Transcript created: transcript_Q4.txt
+2025-12-09T15:56:31.964Z [SUCCESS] (09_12_2025_22_55_viet_tester) Q4 and STT saved successfully.
+2025-12-09T15:56:40.709Z [INFO] (09_12_2025_22_55_viet_tester) Transcript created: transcript_Q5.txt
+2025-12-09T15:56:40.713Z [SUCCESS] (09_12_2025_22_55_viet_tester) Q5 and STT saved successfully.
+2025-12-09T15:56:42.263Z [INFO] (09_12_2025_22_55_viet_tester) Session finished. Total questions: 5

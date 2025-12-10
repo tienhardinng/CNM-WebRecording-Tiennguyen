@@ -1,0 +1,3 @@
+[Question 4: Why did you choose our company?]
+--- Automatic Transcript (STT) ---
+Internal error calling AI: Your API key was reported as leaked. Please use another API key.
