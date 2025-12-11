@@ -11,7 +11,7 @@ const app = express();
 const PORT = 3000;
 
 // ====== GEMINI AI CONFIG (API KEY UPDATED HERE) ======
-const GEMINI_API_KEY = "AIzaSyBYcoAjM859Uo5dJ1sWLo8Xgcr5Ol2t5qg"; 
+const GEMINI_API_KEY = "AIzaSyDsPkE8-R_HzYcz328zf0UFwk_1TlIaAVA"; 
 const GEMINI_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${GEMINI_API_KEY}`;
 // =================================================
 
