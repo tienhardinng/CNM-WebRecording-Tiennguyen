@@ -30,10 +30,10 @@ uploads/DD_MM_YYYY_HH_mm_username_safe/
 └─ meta.json
 
 3️. API Contract
-Endpoint	Method	Description
+Endpoint	        Method	 Description
 /api/verify-token	POST	Validate access token
 /api/session/start	POST	Initialize session, verify token, create upload folder
-/api/upload-one	POST (Multipart)	Save video, process STT, update metadata per question
+/api/upload-one	    POST (Multipart)	Save video, process STT, update metadata per question
 /api/session/finish	POST	Finalize session data
 
 Session Flow:
@@ -59,17 +59,25 @@ main
  ├─ V1-prototype        # Initial Vosk-based STT module (70MB, replaced)
  └─ final-gemini        # Final Gemini-based implementation
 
-7️. Demo & Resources
-YouTube Demo Video: Link
-Presentation Slides: Link
-Final GitHub Repository: HanTie Final
-V1 Prototype (Optional): Vosk Prototype
+7️. Run Instructions
+7.1 Installation
+Ensure you have Node.js (v18+) installed on your system.
+Navigate to the root directory of the project in your terminal and run the following command to install required dependencies: npm install
+
+7.2 Configuration
+Before starting the server, you must configure the Gemini API Key in the backend for the Speech-to-Text feature.
+Method 1 (Best Practice): Set the GEMINI_API_KEY as an environment variable in your system or in a local .env file.
+Method 2 (Directly in code): Edit the server.js file and replace the placeholder value for GEMINI_API_KEY.
+
+7.3 Execution
+Start Server: Run the backend server using Node.js: node server.js
+Access Application: Open index.html in your web browser (via http://localhost:3000/ if accessed directly, or by simply opening the file in your browser).
 
 8️. Team Contributions
 Member	            Student ID	Contribution	      Role
-Nguyen Viet Tien	11247233	 33.34%	       Backend, reliability, storage & metadata
-Pham Thu Ha	        11247164	 33.33%	       Frontend, initial STT (Vosk), API integration
-Hoang Thanh Nhan	11274212	 33.33%	       Frontend UI, retry/backoff, testing
+Nguyen Viet Tien	11247233	33.34%	       Backend, reliability, storage & metadata
+Pham Thu Ha	        11247164	33.33%	       Frontend, initial STT (Vosk), API integration
+Hoang Thanh Nhan	11274212	33.33%	       Frontend UI, retry/backoff, testing
 
 9️. Future Work
 FFmpeg integration for multiple video formats
