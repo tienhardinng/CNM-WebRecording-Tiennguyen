@@ -77,7 +77,7 @@ Access Application: Open index.html in your web browser (via http://localhost:30
 Member	            Student ID	Contribution	      Role
 Nguyen Viet Tien	11247233	33.34%	       Backend, reliability, storage & metadata
 Pham Thu Ha	        11247164	33.33%	       Frontend, initial STT (Vosk), API integration
-Hoang Thanh Nhan	11274212	33.33%	       Frontend UI, retry/backoff, testing
+Hoang Thanh Nhan	11247212	33.33%	       Frontend UI, retry/backoff, testing
 
 9️. Future Work
 FFmpeg integration for multiple video formats
